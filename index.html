@@ -5,15 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Nurlita</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
+
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
 </head>
 <body>
     
-    <header></header>
+    <header class="main-header">
+    <!--logo web-->
+        <div class="logo">
+            
 
-    <main></main>
+        </div>
+        <nav>
+            <ul class="flex h-[100px] items-center gap-[2px] text-lg font-medium">
+                <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
+                <li><a class="border p-[8px] rounded" href="#profile">Profile</a></li>
+                <li><a class="border p-[8px] rounded" href="#portfolio">Portfolio</a></li>
+                <li><a class="border p-[8px] rounded" href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <footer></footer>
+    <hr>
+
+    <main>
+        <section 
+  id="home" 
+  class="h-screen w-full flex flex-col justify-center items-center text-center text-white bg-cover bg-center" 
+  style="background-image: url('https://i.ibb.co.com/nMvTbpkD/IMG-0236.jpgimages/bg-welcome.jpg');"
+>
+  <!-- Overlay biar teks lebih kebaca -->
+  <div class="bg-black/50 p-6 rounded-xl">
+    <h1 class="text-[40px] md:text-[56px] font-bold mb-4">
+      Welcome to My Portfolio
+    </h1>
+    <p class="text-[18px] md:text-[20px] max-w-2xl">
+      Explore my world of painting, illustration, and performance art.
+    </p>
+  </div>
+</section>
+
+        <hr>
+
+        <section id="profile" class="min-h-[100vh] flex items-center justify-center px-6 bg-gray-50">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-5xl w-full">
+    
+    <!-- Foto -->
+    <div class="flex justify-center">
+      <img 
+        src="https://i.ibb.co.com/qL8vmxNP/okok.jpg" 
+        alt="My Profile Photo" 
+        class="w-64 h-64 object-cover rounded-full shadow-lg"
+      />
+    </div>
+
+    <!-- Deskripsi Singkat -->
+    <div>
+      <h2 class="text-[30px] font-bold mb-4">About Me</h2>
+      <p class="text-[18px] leading-relaxed text-gray-700">
+        Hi, I’m <span class="font-semibold"></span>Nurlita Fitriah</span>.  
+        I’m an artist who loves to explore painting, illustration, and performance art.  
+        My works are inspired by everyday life and social issues I want to share with others.
+      </p>
+    </div>
+
+  </div>
+        </section>
+
+        <hr>
+
+        <section id="portfolio" class="min-h-[100vh] px-6 py-16 bg-white">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-[30px] font-bold mb-12">Portfolio</h2>
+
+    <!-- Grid 3 kolom -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Item 1 -->
+      <div class="shadow-lg rounded-xl overflow-hidden bg-gray-50">
+        <img src="https://i.ibb.co.com/nMvTbpkD/IMG-0236.jpg" alt="Megalomania" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Megalomania (2025)</h3>
+          <p class="text-gray-600 text-sm">Oil Painting</p>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="shadow-lg rounded-xl overflow-hidden bg-gray-50">
+        <img src="https://i.ibb.co.com/23zLMH2L/Screenshot-2025-09-27-061619.png" alt="Unfollow performance art" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Unfollow (2019)</h3>
+          <p class="text-gray-600 text-sm">Performance Art</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="shadow-lg rounded-xl overflow-hidden bg-gray-50">
+        <img src="https://i.ibb.co.com/39Hdnwy4/Screenshot-2025-09-27-061634.png" alt="Kupu-kupu Malam illustration" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Kupu-kupu Malam (2019)</h3>
+          <p class="text-gray-600 text-sm">Illustration</p>
+        </div>
+      </div>
+        </section>
+
+        <hr>
+
+        <section id="message-us" id="message-us" class="min-h-[100vh] flex flex-col justify-center items-center gap-6">
+            <h2 class="text-[30px] font-bold">Message Us</h2>
+             <p class="text-sm text-gray-600 mb-8">for available artwork and collaboration</p>
+            <form class="w-full max-w-md bg-white p-[20px] rounded shadow">
+                <div class="mb-[10px]">
+      <label for="name" class="block mb-[5px]">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        class="w-full border p-[8px] rounded"
+      />
+    </div>
+
+    <!-- Email -->
+    <div class="mb-[10px]">
+      <label for="email" class="block mb-[5px]">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        class="w-full border p-[8px] rounded"
+      />
+    </div>
+
+    <!-- Message -->
+    <div class="mb-[10px]">
+      <label for="message" class="block mb-[5px]">Message:</label>
+      <textarea 
+        id="message" 
+        name="message" 
+        rows="4" 
+        class="w-full border p-[8px] rounded"
+      ></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" onclick="validateform()"
+    class="bg-blue-500 text-white px-5 py-2 rounded hover:bg-blue-600"
+    >
+      Send
+    </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center p-[20px] bg-gray-200">&copy; 2025 Nurlita Fitriah. All rights reserved.</p>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

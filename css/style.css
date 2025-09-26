@@ -1,0 +1,14 @@
+.logo {
+    height: 75px;
+    background-color: cornflowerblue;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url(https://i.ibb.co.com/MDhS807F/export202401262149405830.jpg);
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color:azure ;
+}
